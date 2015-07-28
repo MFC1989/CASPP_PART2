@@ -12,14 +12,25 @@ void d2h(unsigned int n)
 	}
 
 	d2h(n>>4);
-	cout << "n=" << n <<"-----";
 	cout << n % 16 << endl;;
+}
+
+
+//十六进制转十进制
+void h2d(unsigned int n)
+{
+	if (n <= 0)
+	{
+		return;
+	}
+
+	cout << n % 10;
+	h2d(n / 10);
 }
 
 int main()
 {
-	int x = 18;
-	
-	d2h(x);
+	int x = 0xC;
+	h2d(x);
 	return 0;
 }
