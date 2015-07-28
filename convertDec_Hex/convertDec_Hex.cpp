@@ -30,7 +30,8 @@ void h2d(unsigned int n)
 
 int main()
 {
-	int x = 0xC;
+	int x =0x0123456;
+	int *p = &x;
 	h2d(x);
 	return 0;
 }
