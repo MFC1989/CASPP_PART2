@@ -2,7 +2,6 @@
 #include <cmath>
 using namespace std;
 
-
 //X的最低有效字节，其他位全置0
 void funcA(unsigned long long  & n)
 {
@@ -51,6 +50,8 @@ void funcA(unsigned long long  & n)
 	n &= mask;
 
 }
+
+//除了最低有效字节外，其他的位都取补，最低有效字节不变
 
 
 
